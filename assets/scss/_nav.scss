@@ -1,0 +1,81 @@
+#Nav {
+  background: $product_bg;
+  padding: 10px 0px;
+  .scarch-box {
+    position: relative;
+    input {
+      width: 100%;
+      height: 45px;
+      background: $Background_color;
+      padding-left: 20px;
+      border: none;
+      padding-right: 50px;
+      border-radius: 5px;
+    }
+    .search_btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $product_bg;
+      background: $primary_color;
+      border: none;
+      height: 100%;
+      padding: 0px 15px;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+  span {
+    color: $TextColor;
+    margin-left: 10px;
+  }
+  // .sidebar {
+  //   padding-top: 20px;
+  //   ul {
+  //     width: 190px;
+  //     li {
+  //       // display: inline-block;
+  //       position: relative;
+  //       a {
+  //         width: 100%;
+  //         color: $secoundry_color;
+  //         font-size: 13px;
+  //         position: relative;
+  //         line-height: 27px;
+  //         font-weight: 400;
+  //         padding-left: 10px;
+  //         transition: 0.5s;
+  //         &:hover {
+  //           width: 100%;
+  //           color: $sidebar_hover;
+  //           background: rgba(236, 236, 236, 0.8);
+  //         }
+  //         // &::after{
+  //         //     content: \f054;
+  //         //     position: absolute;
+  //         //     font-family: fontAwesome;
+  //         //     background-color: red;
+  //         //     top: 0;
+  //         //     right: 0;
+  //         // }
+  //       }
+  //       ul {
+  //         position: absolute;
+  //         top: 0;
+  //         left: 100%;
+  //         li {
+  //           position: relative;
+  //           // display: inline-block;
+  //           a {
+  //             color: red;
+  //           }
+  //           ul{
+  //               position: absolute;
+  //               top: 0;
+  //               left: 100%;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

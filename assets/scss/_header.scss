@@ -1,0 +1,20 @@
+header{
+    background: $bg_color2;
+    // padding: 5px 0px;
+    ul {
+        li{
+        a{
+            font-size: 12px;
+            padding: 0px 18px;
+            color: $third_color;
+            &:hover{
+                color: $primary_color;
+                text-decoration: underline;
+            }
+            &.active-color{
+                color: $primary_color;
+            }
+        }
+    }
+    }
+}
