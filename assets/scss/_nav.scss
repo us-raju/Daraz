@@ -28,54 +28,57 @@
     color: $TextColor;
     margin-left: 10px;
   }
-  // .sidebar {
-  //   padding-top: 20px;
-  //   ul {
-  //     width: 190px;
-  //     li {
-  //       // display: inline-block;
-  //       position: relative;
-  //       a {
-  //         width: 100%;
-  //         color: $secoundry_color;
-  //         font-size: 13px;
-  //         position: relative;
-  //         line-height: 27px;
-  //         font-weight: 400;
-  //         padding-left: 10px;
-  //         transition: 0.5s;
-  //         &:hover {
-  //           width: 100%;
-  //           color: $sidebar_hover;
-  //           background: rgba(236, 236, 236, 0.8);
-  //         }
-  //         // &::after{
-  //         //     content: \f054;
-  //         //     position: absolute;
-  //         //     font-family: fontAwesome;
-  //         //     background-color: red;
-  //         //     top: 0;
-  //         //     right: 0;
-  //         // }
-  //       }
-  //       ul {
-  //         position: absolute;
-  //         top: 0;
-  //         left: 100%;
-  //         li {
-  //           position: relative;
-  //           // display: inline-block;
-  //           a {
-  //             color: red;
-  //           }
-  //           ul{
-  //               position: absolute;
-  //               top: 0;
-  //               left: 100%;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .sidebar {
+    top: calc(100% + 10px);
+    left: 0;
+    width: 200px;
+    height: 345px;
+    background-color: $product_bg;
+    box-shadow: $shadow1;
+    z-index: 999999999;
+    ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        &.is_hover::after {
+          content: "\f054";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 700;
+          padding: 0 5px;
+          opacity: 0;
+          visibility: hidden;
+          color: $sidebar_hover;
+        }
+        &:hover{
+          background: rgba(60,159,185, 0.1);
+        }
+        a {
+          font-size: 13px;
+          color: $secoundry_color;
+          line-height: 27px;
+          width: 100%;
+          &:hover {
+            color: $sidebar_hover;
+          }
+        }
+        ul {
+          background-color: $product_bg;
+          box-shadow: $shadow1;
+          width: 200px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:hover > ul,
+        &:hover::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
 }

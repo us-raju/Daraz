@@ -1,0 +1,201 @@
+#contact_info {
+  background: #2e2e54;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    margin: 28px 0 9px;
+    color: $product_bg;
+  }
+  ul li {
+    a {
+      font-size: 12px;
+      color: $product_bg;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .customar_care {
+    padding-right: 45px;
+  }
+  .daraz_info {
+    padding-top: 35px;
+  }
+  .qr_code_section {
+    .QRCODE {
+      margin: 25px 28px 0px 0px;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      }
+    }
+    .LOGO {
+      margin-top: 45px;
+      img {
+        width: 42px;
+        height: 42px;
+      }
+      p {
+        color: $product_bg;
+      }
+      p:first-child {
+        color: $primary_color;
+      }
+    }
+  }
+  .appstore_img {
+    display: inline-block;
+    a {
+      background-image: url(../images/footer_section_img.png);
+      width: 120px;
+      height: 40px;
+      background-position: 0 -110px;
+      margin: 30px 10px 0px 0px;
+    }
+  }
+  .plystore_img {
+    display: inline-block;
+    a {
+      background-image: url(../images/footer_section_img.png);
+      width: 134px;
+      height: 40px;
+      background-position: 0 -65px;
+      margin: 30px 10px 0px 0px;
+    }
+  }
+  .appGallery_img {
+    display: inline-block;
+    a {
+      background-image: url(../images/App_Gallery_img.png);
+      width: 134px;
+      height: 40px;
+    }
+  }
+}
+
+// payment details section start
+#payment_details {
+  padding: 26px 0px;
+  .payment_details_box {
+    width: 25%;
+    .payment_details_item {
+      h3 {
+        line-height: 18px;
+        color: #333;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .title {
+        h4 {
+          line-height: 18px;
+          color: #333;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 15px;
+        }
+      }
+      .payment_methods {
+        .daraz_icon_payment {
+          display: inline-block;
+          background-image: url(../images/footer_section_img.png);
+          background-position: -161px 0;
+          margin: 0 13px 11px 0;
+          width: 55px;
+          height: 40px;
+        }
+        .icon-2 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -60px -200px;
+        }
+        .icon-3 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -120px -200px;
+        }
+        .icon-4 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -221px -45px;
+        }
+        .icon-5 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -221px 0;
+        }
+        .icon-6 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -262px -241px;
+        }
+        .icon-7 {
+          background-image: url(../images/footer_section_img.png);
+          background-position: -201px -241px;
+        }
+      }
+      .daraz_country {
+        .flag {
+          background-image: url(../images/footer_section_img.png);
+          width: 36px;
+          height: 36px;
+        }
+        .flag-1 {
+          background-position: -164px -245px;
+          margin-right: 5px;
+        }
+        .flag-2 {
+          background-position: 0 -245px;
+          margin-right: 5px;
+        }
+        .flag-3 {
+          background-position: -41px -245px;
+          margin-right: 5px;
+        }
+        .flag-4 {
+          background-position: -82px -245px;
+          margin-right: 5px;
+        }
+        .flag-5 {
+          background-position: -123px -245px;
+        }
+      }
+      .social_media {
+        .social_icon {
+          width: 36px;
+          height: 36px;
+          background-image: url(../images/footer_section_img.png);
+        }
+        .facebook {
+          background-position: -281px -164px;
+        }
+        .daraz_life {
+          background-position: -281px -206px;
+        }
+        .youtube {
+          background-position: -180px -155px;
+        }
+        .twitter {
+          background-position: -281px -123px;
+        }
+        .insta {
+          background-position: -281px -41px;
+        }
+      }
+      .pci {
+        span {
+          display: inline-block;
+          background-image: url(../images/footer_section_img.png);
+          background-position: 0 0;
+          width: 156px;
+          height: 60px;
+        }
+      }
+      .DBID {
+        p {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// payment details section end
