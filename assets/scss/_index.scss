@@ -177,6 +177,7 @@
     .catagory2_product_item {
       border-right: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
+      width: calc(100% / 8);
       &:nth-child(8) {
         border-right: none !important;
       }

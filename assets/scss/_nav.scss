@@ -1,6 +1,76 @@
 #Nav {
   background: $product_bg;
   padding: 10px 0px;
+  .nav_catagory {
+    transform: scale(1);
+    width: 200px;
+    padding-top: 15px;
+    position: relative;
+    h4 {
+      width: 100%;
+      opacity: 0.85;
+      font-family: 500;
+      margin-left: 20px;
+      font-size: 14px;
+      color: rgba(102, 102, 102, 0.85);
+      letter-spacing: 0;
+      line-height: 40px;
+      &::after {
+        content: "\f078";
+        position: absolute;
+        top: 15px;
+        left: 85px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 700;
+      }
+      &:hover {
+        color: #666;
+      }
+      &:hover::after {
+        content: "\f077";
+      }
+    }
+    .sidebar {
+      transform: scale(0);
+    }
+    &:hover .sidebar {
+      transform: scale(1);
+    }
+  }
+  .catagory_active{
+    transform: scale(1);
+  }
+  .menu_catagory {
+    margin: 15px 0px 0px 20px;
+    opacity: 0;
+    visibility: hidden;
+    span {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      color: #999999;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 40px;
+      &::after {
+        content: "\f078";
+        position: absolute;
+        top: 0;
+        left: 80px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 700;
+        color: #999999;
+      }
+      &:hover::after {
+        content: "\f077";
+        bottom: 0;
+        color: #666666;
+      }
+      &:hover {
+        color: #666666;
+      }
+    }
+  }
   .scarch-box {
     position: relative;
     input {
@@ -50,8 +120,8 @@
           visibility: hidden;
           color: $sidebar_hover;
         }
-        &:hover{
-          background: rgba(60,159,185, 0.1);
+        &:hover {
+          background: rgba(60, 159, 185, 0.1);
         }
         a {
           font-size: 13px;
