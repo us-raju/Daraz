@@ -1,8 +1,8 @@
 $(function () {
   //    Home banner slider js start
   $(".home_banner_slider").slick({
-    prevArrow: false,
-    nextArrow: false,
+    PrevArrows: '<i class="home_banner_slider_arrow fa-solid fa-chevron-right"></i>',
+    NextArrows: '<i class="home_banner_slider_arrow fa-solid fa-chevron-left"></i>',
     dots: true,
     dotsClass: "home_banner_dots",
   });
@@ -28,4 +28,9 @@ $(function () {
      );
    });
   // the final countdown end
+
+  // xoom js start 
+  $(".xzoom").xzoom();
+
+  // xoom js end
 });

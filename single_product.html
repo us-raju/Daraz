@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./assets/css/venobox.min.css" />
     <!-- aos css  -->
     <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- xzoom css  -->
+    <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- custom css  -->
@@ -65,33 +67,117 @@
     <section id="single_product">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <img
+              class="xzoom"
+              src="./assets/images/shop_product-1(resize).jpg"
+              xoriginal="./assets/images/shop_product-1.jpg"
+            />
+
+            <div class="xzoom-thumbs">
+              <a class="img-fluid" href="/assets/images/shop_product-1.jpg">
+                <img
+                  class="xzoom-gallery"
+                  width="80"
+                  src="/assets/images/shop_product-1.jpg"
+                  xpreview="/assets/images/shop_product-1(resize).jpg"
+                />
+              </a>
+            </div>
+          </div>
           <div class="col-lg-5">
             <div class="single_priduct_info">
               <h3>Indian Soft Jorjet Digital Print Saree</h3>
-              <div class="rating">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <p>1Rating</p>
+              <div class="for_border">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="rating">
+                    <img src="./assets/images/star.png" alt="" />
+                    <img src="./assets/images/star.png" alt="" />
+                    <img src="./assets/images/star.png" alt="" />
+                    <img src="./assets/images/star.png" alt="" />
+                    <img src="./assets/images/star.png" alt="" />
+                    <a href="#">1Rating</a>
+                  </div>
+                  <div class="share_icon">
+                    <a class="share" href="#"
+                      ><i class="fa-solid fa-share-nodes"></i
+                    ></a>
+                    <a class="heart" href="#"
+                      ><img src="./assets/images/heart.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
                 <div class="brand_title">
                   <p>Brand:</p>
-                  <a href="#">No Brand |</a>
+                  <a href="#">No Brand</a>
+                  <span>|</span>
                   <a href="#">More Women from No Brand</a>
                 </div>
               </div>
+
               <div class="single_product_price">
                 <span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
                 <ins>1,100</ins>
               </div>
-              <div class="color_size">
-                <p class="title">Color Family</p>
+              <div class="sku_selector">
+                <div class="sku_prop">
+                  <h6>Color Family</h6>
+                  <div class="section_contant">
+                    <div class="sku_contant_header">
+                      <p>Not Specified</p>
+                    </div>
+                    <div class="sku_contant">
+                      <button>Not Specified</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="sku_prop">
+                  <h6>Size</h6>
+                  <div class="section_contant">
+                    <div class="sku_contant_header">
+                      <p>Int</p>
+                    </div>
+                    <div class="sku_contant">
+                      <button class="int_num">46</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="button_section">
+                  <button class="buy_btn">Buy Now</button>
+                  <button class="add_cart_btn">Add to Cart</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <div class="address_info">
+              <div
+                class="delivery_header_title d-flex justify-content-between align-items-center"
+              >
+                <h6>Delivery</h6>
+                <span class="i_icon">
+                  <i class="fa-solid fa-info"></i>
+                  <!-- <div class="delivery_popup">
+                    <div class="popup_header">
+                      <h5>Delivery</h5>
+                    </div>
+                    <div class="Standard_Delivery">
+                      <span><i class="fa-solid fa-book"></i></span>
+                      <h6>Standard Delivery :</h6>
+                      <p>
+                        Enjoy delivery of your order directly to the doorstep!
+                      </p>
+                      <a href="#">Find out more</a>
+                    </div>
+                    <div class="cash_on_delivery">
+                      <span><i class="fa-regular fa-money-bill-1"></i></span>
+                      <h6>Cash on Delivery Available</h6>
+                    </div>
+                  </div> -->
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -109,6 +195,8 @@
     <script src="./assets/js/jquery.countdown.min.js"></script>
     <!-- aos js  -->
     <script src="./assets/js/aos.js"></script>
+    <!-- xzoom js  -->
+    <script src="./assets/js/xzoom.min.js"></script>
     <!-- Bootstrap js  -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- custom js  -->
